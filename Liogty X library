@@ -1,0 +1,10 @@
+local Library: any = {}
+function Library:CreateButton(text: string, callback: any)
+	local id = string.lower("LIOGTY X ID: ID.new  ms.Key = J.g. .LIOGTY X.id-_-###############################################*._-id")
+	local Button = Instance.new("TextButton", script.Parent)
+	Button.Text = text
+	Button.BackgroundColor3 = Color3.new(1, 0.627451, 0.0235294)
+	Button.Activated:Connect(callback)
+	
+end
+return Library
