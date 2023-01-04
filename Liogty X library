@@ -1,10 +1,77 @@
-local Library: any = {}
-function Library:CreateButton(text: string, callback: any)
-	local id = string.lower("LIOGTY X ID: ID.new  ms.Key = J.g. .LIOGTY X.id-_-###############################################*._-id")
-	local Button = Instance.new("TextButton", script.Parent)
-	Button.Text = text
-	Button.BackgroundColor3 = Color3.new(1, 0.627451, 0.0235294)
-	Button.Activated:Connect(callback)
-	
+local LiogtyXuilibrary = Instance.new("ScreenGui")
+local Backgorund = Instance.new("Frame")
+local HubName = Instance.new("TextLabel")
+local UIGridLayout = Instance.new("UIGridLayout")
+local UICorner = Instance.new("UICorner")
+
+--Properties:
+
+LiogtyXuilibrary.Name = "Liogty X ui library"
+LiogtyXuilibrary.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+LiogtyXuilibrary.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Backgorund.Name = "Backgorund"
+Backgorund.Parent = LiogtyXuilibrary
+Backgorund.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+Backgorund.Position = UDim2.new(0.226810411, 0, 0.280647397, 0)
+Backgorund.Size = UDim2.new(0, 489, 0, 254)
+
+HubName.Name = "HubName"
+HubName.Parent = Backgorund
+HubName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+HubName.BackgroundTransparency = 1.000
+HubName.Size = UDim2.new(0, 68, 0, 17)
+HubName.Font = Enum.Font.Cartoon
+HubName.Text = "Super Hub"
+HubName.TextColor3 = Color3.fromRGB(0, 0, 0)
+HubName.TextSize = 14.000
+
+UIGridLayout.Parent = Backgorund
+UIGridLayout.FillDirection = Enum.FillDirection.Vertical
+UIGridLayout.CellSize = UDim2.new(0, 100, 0, 20)
+
+UICorner.Parent = LiogtyXuilibrary
+
+-- Module Scripts:
+
+local fake_module_scripts = {}
+
+do -- Backgorund.ModuleScript
+	local script = Instance.new('ModuleScript', Backgorund)
+	local function module_script()
+		local Library: any = {}
+		function Library:CreateButton(text: string, callback: any)
+			local id = string.lower("LIOGTY X ID: ID.new  ms.Key = J.g. .LIOGTY X.id-_-###############################################*._-id")
+			local Button = Instance.new("TextButton", script.Parent)
+			Button.Text = text
+			Button.BackgroundColor3 = Color3.new(1, 0.627451, 0.0235294)
+			Button.Activated:Connect(callback)
+			script.Parent.Active = true
+			script.Parent.Draggable = true
+			script.Parent.Selectable = true
+		end
+		return Library
+		
+	end
+	fake_module_scripts[script] = module_script
 end
-return Library
+
+
+-- Scripts:
+
+local function WWZCW_fake_script() -- Backgorund.Script 
+	local script = Instance.new('Script', Backgorund)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	script.Parent.Active = true
+	script.Parent.Draggable = true
+	script.Parent.Selectable = true
+end
+coroutine.wrap(WWZCW_fake_script)()
