@@ -12,7 +12,7 @@ local UICorner = Instance.new("UICorner")
 
 --Properties:
 
-ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.Parent = game:GetService("CoreGui")
 
 ScriptsWindow.Name = "ScriptsWindow"
 ScriptsWindow.Parent = ScreenGui
