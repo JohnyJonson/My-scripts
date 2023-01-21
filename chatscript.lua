@@ -1,5 +1,5 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "✏️ chat 🐾", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest", IntroText = "Pet Simulator X Script"})
+local Window = OrionLib:MakeWindow({Name = "✏️ chat 🐾", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest", IntroText = "chat Script"})
 
 --[[
 Name = <string> - The name of the UI.
