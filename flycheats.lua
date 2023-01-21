@@ -64,8 +64,7 @@ local function GZSKQN_fake_script() -- FlyButton.LocalScript
 	Fly.Activated:Connect(function()
 		if Fly.Visible == true then
 			game.Workspace.Gravity = 0.1
-		else
-		Fly.BackgroundColor = Color3.new(1, 1, 1)
+		
 		end
 		
 	end)
