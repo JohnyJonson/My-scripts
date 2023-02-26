@@ -37,4 +37,15 @@ Tab:AddToggle({
 	    end
 	end    
 })
+Tab:AddButton({
+	Name = "Open trades",
+	Callback = function()
+      		game.Players.LocalPlayer.PlayerGui.Trading.Enabled = true
+  	end    
+})
 
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+OrionLib:Init()
