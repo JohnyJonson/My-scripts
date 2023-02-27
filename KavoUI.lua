@@ -23,3 +23,19 @@ Sectionv:NewToggle("✅EXPLOITV2", "v3", function(state)
            game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
     end
 end)
+Section:NewButton("🔥AirWalk🔥", "you can airwalk now", function()
+     part = Instance.new("Part")
+                part2 = Instance.new("Part")
+                part.Transparency = 1
+                part2.Transparency = 1
+                part.Parent = workspace
+                part.Anchored = true
+                part2.Parent = workspace
+                part2.Anchored = true
+                task.spawn(function()
+         while wait(0.0000005) do
+                            part.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame - Vector3.new(0, 3.6, 0)
+                            part2.CFrame =game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame + Vector3.new(0, 2.5, 0)
+end
+end)
+end)
