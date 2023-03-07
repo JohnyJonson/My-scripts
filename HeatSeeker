@@ -1,7 +1,7 @@
 repeat
-					task.wait(0.5)
-					game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 30
+					task.wait(1)
+					game.Players.LocalPlayer.Character:WaitForChild("Humanoid").WalkSpeed = 74
 					
-					task.wait(0.1)
-					game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+					task.wait(0.01)
+					game.Players.LocalPlayer.Character:WaitForChild("Humanoid").WalkSpeed = 16
 					until print("Nah")
