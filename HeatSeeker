@@ -1,7 +1,8 @@
+speed = true
 repeat
 					task.wait(1)
-					game.Players.LocalPlayer.Character:WaitForChild("Humanoid").WalkSpeed = 74
+					game.Players.LocalPlayer.Character:WaitForChild("Humanoid").WalkSpeed = 36
 					
 					task.wait(0.090)
 					game.Players.LocalPlayer.Character:WaitForChild("Humanoid").WalkSpeed = 16
-					until speed["Enabled"] == false
+					until speed == false
