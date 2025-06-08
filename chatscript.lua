@@ -18,7 +18,7 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 Tab:AddLabel("The Chat tab. You can say something with the chat!")
-Tab:AddParagraph("chat","oh hell nah, Chat tab is a tab where u can say anything without saying something in the chat lol idk why i put here soo long text but ok psx new cool doodle world update psx! pet simulator x is cool! LOL OLOL OL OL OLO OL LO OLOL OL L LO so i will be making updates soon ok long text sorry! ")
+Tab:AddParagraph("chat","chat anywhere tf??!?!?!?!?")
 --[[
 Name = <string> - The name of the tab.
 Icon = <string> - The icon of the tab.
